@@ -1,0 +1,53 @@
+#is-backtop {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 1.4rem;
+    z-index: 1000000;
+ 
+    p {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: ease-in-out 0.3s;
+        position: relative;
+       
+    }
+
+    &:hover {
+        p {
+            background-color: #42a94b;
+        }
+    }
+
+    .c-top {
+        font-size: 2.6rem;
+        line-height: 0.6;
+    }
+
+    img {
+        margin-right: 8px;
+        animation: topbottom 2s linear infinite;
+    }
+}
+
+@keyframes topbottom {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(8px);
+    }
+}

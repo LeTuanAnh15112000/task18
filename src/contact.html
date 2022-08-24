@@ -1,0 +1,113 @@
+<%- include('_layouts/layout', { title: 'Contact page' }); -%>
+
+<!-- @meta -->
+<meta name="description" content="Contact page">
+<!-- @@meta -->
+
+<!-- @content -->
+<main class="p-contact">
+    <section class="c-investigation">
+        <h1 class="c-investigation__title">お問い合わせ</h1>
+    </section>
+    <section class="c-regis">
+        <div class="l-container">
+            <div class="c-regis__top">
+                <h2 class="c-regis__title">
+                    <img src="./assets/img/logo-mark.png" alt="Img logo-mark"><br>
+                    お問い合わせフォーム
+                </h2>
+                <p class="c-regis__text">
+                    株式会社アイエステーへのお問い合わせ専用フォームです。弊社へのご質問・ご相談などありましたらどうぞお気軽にご連絡ください。後日メールまたはお電話にて返信いたします。
+                </p>
+            </div>
+            <!-- from validate -->
+            <div class="c-regis__form">
+                <form action="./" method="POST" id="is-form">
+                    <!-- Start Name -->
+                    <div class="c-regis__group">
+                        <div class="c-regis__groupitem">   
+                            <div class="c-regis__grouptitle">
+                                <span class="u-colorgrey">任意</span><label for="fullname" class="u-lable">法人名</label>
+                            </div>      
+                            <input id="fullname" name="fullname" type="text" class="u-input" placeholder="株式会社アイエステー">
+                        </div>
+                    </div>
+                    <!-- End Name -->
+                    <!-- Start school company name -->
+                    <div class="c-regis__group">
+                        <div class="c-regis__groupitem">
+                            <div class="c-regis__grouptitle">
+                                <span class="u-colorgreen">必須</span><label for="fullname" class="u-lable">お名前</label>
+                            </div> 
+                            <input id="company" name="company" type="text" class="u-input" placeholder="熊本 太郎">
+                        </div>
+                    </div>
+                    <!-- End school company name -->
+                    <!-- Start email -->
+                    <div class="c-regis__group">
+                        <div class="c-regis__groupitem">
+                            <div class="c-regis__grouptitle">
+                                <span class="u-colorgreen">必須</span><label for="fullname" class="u-lable">メールアドレス</label>
+                            </div> 
+                            <input id="email" name="email" type="text" class="u-input u-inputfull" placeholder="example@gmail.com">
+                        </div>
+                    </div>
+                    <!-- End email -->
+                    <!-- Start Phone -->
+                    <div class="c-regis__group">
+                        <div class="c-regis__groupitem">
+                            <div class="c-regis__grouptitle">
+                                <span class="u-colorgreen">必須</span><label for="fullname" class="u-lable">電話番号</label>
+                            </div> 
+                            <input id="phone" name="phone" type="text" class="u-input" placeholder="00-0000-0000">
+                        </div>
+                    </div>
+                    <!-- End Phone -->
+                    <!-- Start Address -->
+                    <div class="c-regis__group">
+                        <div class="c-regis__groupitem">
+                            <div class="c-regis__grouptitle">
+                                <span class="u-colorgrey" >任意</span><label for="fullname" class="u-lable">ご住所</label>
+                            </div>
+                            <div class="">
+                                <div class="">
+                                    <div class="">
+                                        <label for="content" class="u-lable">お問い合わせ内容</label>
+                                        <input id="" name="" type="text" class="u-input" placeholder="00-0000-0000">
+                                    </div>
+                                    <select name="cars" id="cars">
+                                          <option value="volvo" disabled selected>--都道府県--</option>
+                                          <option value="saab">Saab</option>
+                                    </select>
+                                </div>
+                                <div class="">
+                                    <input id="Address" name="Address" type="text" class="u-input" placeholder="00-0000-0000">
+                                    <input id="Address1" name="Address1" type="text" class="u-input" placeholder="00-0000-0000">
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Address -->
+                    <!-- Start Requested content -->
+                    <div class="c-regis__group">
+                        <div class="c-regis__groupitem">
+                            <div class="c-regis__grouptitle">
+                                <span class="u-colorgreen">任意</span><label for="fullname" class="u-lable">お問い合わせ内容</label>
+                            </div>
+                            <textarea class="u-tarea" id="content" cols="20" rows="10" placeholder="お問い合わせ内容をご入力ください。"></textarea>
+                        </div>
+                    </div>
+                    <!-- End Requested content -->
+                    <!-- Start Submit content -->
+                    <div class="c-regis__button">
+                        <div class="u-btn">
+                            <button class="u-link" type="submit">確認する ></button>
+                        </div>
+                    </div>
+                    <!-- End Submit content -->
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- @@content -->

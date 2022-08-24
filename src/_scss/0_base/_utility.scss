@@ -1,0 +1,134 @@
+
+.pc-only {
+    @include tab {
+        display: none;
+    }
+}
+// introduce
+
+.u-bg1, .u-bg3 {
+    background: url("./assets/img/cliff-reinforcement.jpg");
+    background-size: 100%;
+    transition: all 0.2s linear;
+    &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        opacity: 0.7;
+        @include outside_intop;
+        animation: outside_intop .3s linear;
+        border-bottom: 218px solid transparent;
+        border-right: 128px solid #fff;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        opacity: 0.7;
+        @include outside_inbottom;
+        animation: outside_inbottom .3s linear;
+        border-bottom: 450px solid #fff;
+        border-right: 270px solid transparent;
+    }
+    &:hover::before {
+        @include keyframe_tright();
+        animation: border_right_top 0.3s linear;
+        border-bottom: 0 solid transparent;
+        border-right: 0 solid #fff;
+    }
+    
+    &:hover::after {
+        @include keyframe_bleft();
+        animation: border_left_bottom 0.3s linear;
+        border-bottom: 0 solid transparent;
+        border-right: 0 solid #fff;
+    }
+   &:hover{
+        background-size: 110%;
+    }
+}
+
+.u-bg2, .u-bg4 {
+    background: url("./assets/img/drone.jpg");
+    background-size: 100%;
+    transition: all 0.2s linear;
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0.7;
+        @include outside_intop1;
+        animation: outside_intop1 .3s linear;
+        border-left: 128px solid #fff;
+        border-bottom: 218px solid transparent;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        opacity: 0.7;
+        @include outside_intop;
+        animation: outside_intop .3s linear;
+        border-left: 270px solid transparent;
+        border-bottom: 450px solid #fff;
+    }
+    &:hover::before {
+        // @include keyframe_tright();
+        // animation: border_right_top 0.3s linear;
+        border-left: 0 solid #fff;
+        border-bottom: 0 solid transparent;
+    }
+    
+    &:hover::after {
+        // @include keyframe_bleft();
+        // animation: border_left_bottom 0.3s linear;
+        border-left: 0px solid #fff;
+        border-bottom: 0px solid transparent;
+    }
+    &:hover{
+        background-size: 110%;
+    }
+}
+
+.u-bg3 {
+    background: url("./assets/img/survey.jpg");
+    background-size: 100%;
+    transition: all 0.2s linear;
+}
+
+.u-bg4 {
+    background: url("./assets/img/bowling.jpg");
+    background-size: 100%;
+    transition: all 0.2s linear;
+}
+
+.u-red {
+    background-color: #d05e48;
+}
+
+.u-blue {
+    background-color: #48b7d0;  
+}
+
+.u-yellow {
+    background-color: #a68a2a;
+}
+
+.u-green {
+    background-color: #40a62a; 
+}
+
+.c-intro {
+    &__cardbtn {
+        .u-padding {
+            padding-top: 19px;
+            letter-spacing: 4px;
+        }
+    }
+}

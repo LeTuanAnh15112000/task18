@@ -1,0 +1,123 @@
+.c-footer {
+    display: flex;
+    padding-top: 100px;
+    position: relative;
+
+    // &::before {
+    //     content: "";
+    //     position: absolute;
+    //     left: 0;
+    //     bottom: 0;
+    //     border-bottom: 450px solid #40a62a;
+    //     border-right: 270px solid transparent;
+    // }
+
+    // &::after {
+    //     content: "";
+    //     position: absolute;
+    //     left: 0;
+    //     bottom: 0;
+    //     border-bottom: 450px solid #40a62a;
+    //     border-right: 270px solid transparent;
+    // }
+
+    &__left {
+        width: 35%;
+        font-size: 5rem;
+        font-family: "Lora", sans-serif;
+        text-align: center;
+        line-height: 0.9;
+
+        &the {
+            font-size: 2rem;
+        }
+
+        &label {
+            font-size: 1.4rem;
+            font-family: "HiraKakuProN-W3";
+        }
+    }
+
+    &__center {
+        width: 30%;
+        text-align: center;
+
+        .c-footer {
+            &__text {
+                font-size: 1.6rem;
+                font-family: "HiraKakuProN-W3";
+
+                &w6 {
+                    font-family: "HiraKakuProN-W6";
+                }
+
+                &13 {
+                    font-family: "HiraKakuProN-W3";
+                    font-size: 1.3rem;
+                }
+            }
+
+            &__tel {
+                font-size: 2.6rem;
+                font-family: "Yu Mincho",sans-serif;
+
+                span {
+                    font-size: 3.2rem;
+                    font-family: "Yu Minchodb", sans-serif;
+
+                }
+            }
+
+            &__fax {
+                font-size: 1.6rem;
+                font-family: "Yu Mincho",sans-serif;
+
+            }
+
+            &__access {
+                font-size: 1.4rem;
+                font-family: "Kozuka Gothic Pr6N", sans-serif;
+
+                p {
+                    display: inline-block;
+
+                    &:first-child {
+                        margin-right: 30px;
+                    }
+
+                    span {
+                        color: #48b7d0;
+                        font-size: 2rem;
+                        font-weight: bold;
+
+                        &.u-rotate {
+                            transform: rotateX(0deg);
+                            transition: transform 0.3s;
+                        }
+                    }
+
+                    &:hover {
+                        cursor: pointer;
+
+                        .u-rotate {
+                            display: inline-block;
+                            transform: scale(1.2) rotateX(-180deg);
+                        }
+                        
+                    }
+                }
+            }
+
+            &__copy {
+                font-family: "HiraKakuProN-W3";
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+
+    &__right {
+        width: 35%;
+
+    }
+}

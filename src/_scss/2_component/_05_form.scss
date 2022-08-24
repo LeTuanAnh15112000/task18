@@ -1,0 +1,90 @@
+.u-colorgrey {
+    background-color: #a1a1a1;
+    color: #fff;
+    border-radius: 3px;
+    width: 42px;
+    margin-right: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.u-colorgreen {
+    background-color: #40a62a;
+    color: #fff;
+    border-radius: 3px;
+    width: 42px;
+    text-align: center;
+    margin-right: 10px;
+    display: inline-block;
+}
+// form
+// text lable
+.u-lable {
+    min-width: 32.1%;
+    font-weight: bold;
+    line-height: 1.7;
+    letter-spacing: 1.3px;
+
+    &.u-lable {
+        &__magrin {
+            margin-top: 4px;
+        }
+    }
+}
+
+.c-regis {
+    &__groupitem {
+        &.u-padding {
+            padding: 17px 0 19px;
+        }
+    }
+
+    &__grouptitle {
+        width: 30%;
+    }
+}
+
+.u-input {
+    width: 70%;
+    height: 45px;
+    padding: 0 10px;
+    border: unset;
+    background-color: #f2f2f2;
+    @include mobi {
+        width: 100%;
+        padding: 0;
+
+    }
+
+    &.u-inputfull {
+        width: 74%;
+        @include mobi {
+            width: 100%;
+            padding: 0;
+        }
+    }
+
+    &.u-inputfull1 {
+        width: 78.8%;
+        @include mobi {
+            width: 100%;
+            padding: 0;
+        }
+    }
+}
+
+.u-tarea {
+    width: 70%;
+    height: 190px;
+    padding: 10px;
+    border: unset;
+    overflow: hidden;
+    background-color: #f2f2f2;
+    @include mobi {
+        padding: 0;
+    }
+}
+
+textarea {
+    resize: none;
+}
